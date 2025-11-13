@@ -1,0 +1,58 @@
+---
+title: "PandasAI v3 Function Index"
+description: "Catalog of callables referenced in the v3 documentation set with links to their usage examples"
+---
+
+This index consolidates every function, method, class constructor, and callable decorator that appears in the v3 documentation (`docs/v3/*.mdx`). Each entry lists the callable and a representative location in the docs where its usage is demonstrated.
+
+| Callable | Documentation reference |
+| --- | --- |
+| `Agent(...)` | [Instantiate multi-turn agents with DataFrames.](agent.mdx#L25-L44) |
+| `AzureOpenAI(...)` | [Configure Azure OpenAI as an LLM provider.](large-language-models.mdx#L86-L103) |
+| `ChromaDB()` | [Enterprise vector store connector example.](agent.mdx#L122-L139) |
+| `DockerSandbox()` | [Create a secure sandbox for agent execution.](agent.mdx#L78-L106) |
+| `LanceDB()` | [Alternate enterprise vector store connector.](agent.mdx#L122-L139) |
+| `LiteLLM(...)` | [Preferred quick-start LLM configuration.](getting-started.mdx#L18-L41) |
+| `OpenAI(...)` | [Direct OpenAI client setup.](large-language-models.mdx#L59-L74) |
+| `Pinecone(...)` | [Enterprise Pinecone vector store configuration.](agent.mdx#L122-L139) |
+| `PostgreSQLConnector(...)` | [Database connector migration example.](migration-guide.mdx#L103-L144) |
+| `Qdrant()` | [Enterprise vector store connector example.](agent.mdx#L122-L139) |
+| `SmartDataframe(...)` | [Legacy SmartDataframe migration guidance.](migration-backwards-compatibility.mdx#L31-L70) |
+| `SmartDatalake(...)` | [Legacy SmartDatalake migration guidance.](migration-backwards-compatibility.mdx#L88-L116) |
+| `TransformationManager(...)` | [Semantic layer transformation utilities.](semantic-layer/transformations.mdx#L267-L314) |
+| `agent.add_skills(...)` | [Attach enterprise skills to agents.](migration-guide.mdx#L156-L205) |
+| `agent.chat(...)` | [Send prompts to an agent.](agent.mdx#L21-L48) |
+| `agent.clarification_questions(...)` | [Enable agent clarification questions.](migration-guide.mdx#L206-L236) |
+| `agent.explain(...)` | [Request agent explanations.](migration-guide.mdx#L206-L236) |
+| `agent.follow_up(...)` | [Continue a multi-turn conversation.](agent.mdx#L40-L52) |
+| `agent.rephrase_query(...)` | [Trigger agent query rephrasing.](migration-guide.mdx#L206-L236) |
+| `agent.train(...)` | [Few-shot agent training workflow.](agent.mdx#L145-L187) |
+| `calculate_bonus(...)` | [Skill example calculating employee bonuses.](skills.mdx#L36-L75) |
+| `calculate_metric(...)` | [Migration example skill for KPIs.](migration-guide.mdx#L392-L420) |
+| `chart_response.save(...)` | [Persist generated charts to disk.](chat-and-output.mdx#L100-L119) |
+| `clarification_questions(...)` | [Deprecated SmartDataframe clarification hook.](migration-backwards-compatibility.mdx#L150-L173) |
+| `df.chat(...)` | [Invoke chat directly on a DataFrame.](chat-and-output.mdx#L55-L100) |
+| `df.to_csv(...)` | [Persist transformed semantic layer views.](semantic-layer/transformations.mdx#L398-L418) |
+| `explain(...)` | [Deprecated SmartDataframe explanation hook.](migration-backwards-compatibility.mdx#L150-L173) |
+| `follow_up(...)` | [Deprecated SmartDataframe follow-up helper.](migration-backwards-compatibility.mdx#L146-L169) |
+| `format_currency(...)` | [Skill example formatting monetary values.](skills.mdx#L76-L94) |
+| `get_employee_stats(...)` | [Skill example returning employee metrics.](skills.mdx#L98-L134) |
+| `lake.chat(...)` | [SmartDatalake chat usage in migration guide.](migration-backwards-compatibility.mdx#L88-L108) |
+| `my_custom_function(...)` | [Minimal custom skill skeleton.](skills.mdx#L18-L35) |
+| `my_skill(...)` | [Troubleshooting skill registration.](migration-troubleshooting.mdx#L22-L44) |
+| `pai.DataFrame(...)` | [Wrap dictionaries into PandasAI DataFrames.](large-language-models.mdx#L160-L190) |
+| `pai.chat(...)` | [Global chat helper working across DataFrames.](agent.mdx#L6-L33) |
+| `pai.config.set(...)` | [Register global configuration, including LLMs.](getting-started.mdx#L33-L45) |
+| `pai.create(...)` | [Create semantic layer datasets.](semantic-layer/new.mdx#L8-L120) |
+| `pai.load(...)` | [Load semantic layer datasets by path.](semantic-layer/new.mdx#L200-L224) |
+| `pai.read_csv(...)` | [Load CSV files into PandasAI structures.](agent.mdx#L70-L94) |
+| `pai.skill(...)` | [Decorator to register enterprise skills.](skills.mdx#L8-L24) |
+| `plot_salaries(...)` | [Skill example rendering salary charts.](skills.mdx#L52-L75) |
+| `rephrase_query(...)` | [Deprecated SmartDataframe rephrasing hook.](migration-backwards-compatibility.mdx#L150-L173) |
+| `result.show(...)` | [Review sandbox-executed chart output securely.](privacy-security.mdx#L46-L64) |
+| `sandbox.start(...)` | [Start the Docker sandbox prior to chatting.](agent.mdx#L78-L96) |
+| `sandbox.stop(...)` | [Shut down the Docker sandbox after use.](agent.mdx#L88-L105) |
+| `smart_df.chat(...)` | [Legacy SmartDataframe chat method.](migration-backwards-compatibility.mdx#L31-L70) |
+| `test_skill(...)` | [Post-migration skill validation helper.](migration-guide.mdx#L440-L472) |
+
+> **Note:** Multiple documentation pages often reference the same callable. The citations above point to a representative location for each item.
