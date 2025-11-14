@@ -302,6 +302,39 @@ date,store_id,product_name,category,quantity,unit_price,customer_email
 2024-01-16,ST003,iMac 27" ,Electronics,1,1799.99,
 ```
 
+### Programmatic clean → semantic layer → chat flow
+
+Need a ready-to-run snippet that copies the same workflow showcased in the notebooks? The following code imports the `TransformationManager`, cleans the `sales_semantic` DataFrame, persists it as a semantic layer, and finally chats with the freshly loaded dataset:
+
+```python
+import pandasai as pai
+from pandasai.semantic_layer.transformations import TransformationManager
+
+manager = TransformationManager(sales_semantic.copy())
+clean_sales = (
+    manager
+    .strip("region")
+    .ensure_positive("revenue")
+    .standardize_categories("channel", {"Retail": "Offline"})
+    .df
+)
+
+semantic_sales = pai.create(
+    path="demo/global-sales",
+    df=clean_sales,
+    description="Sales facts with cleaned channels",
+    columns=[
+        {"name": "region", "type": "string"},
+        {"name": "channel", "type": "string"},
+        {"name": "revenue", "type": "number"},
+    ],
+)
+
+loaded_sales = pai.load("demo/global-sales")
+loaded_sales.chat("Покажи суммарную выручку по очищенным каналам")
+```
+
+
 ### Schema File
 
 Create a `schema.yaml` file to define the transformations:
