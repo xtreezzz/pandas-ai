@@ -1,0 +1,58 @@
+---
+title: "PandasAI v3 Function Index"
+description: "Catalog of callables referenced in the v3 documentation set with links to their usage examples"
+---
+
+This index consolidates every function, method, class constructor, and callable decorator that appears in the v3 documentation (`docs/v3/*.mdx`). Each entry lists the callable and a representative location in the docs where its usage is demonstrated.
+
+| Callable | Documentation reference | Showcase notebook example |
+| --- | --- | --- |
+| `Agent(...)` | [Instantiate multi-turn agents with DataFrames.](agent.mdx#L25-L44) | Раздел 4 («Агенты, LLM и векторные сторы») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `AzureOpenAI(...)` | [Configure Azure OpenAI as an LLM provider.](large-language-models.mdx#L86-L103) | Раздел 4 («Агенты, LLM и векторные сторы») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `ChromaDB()` | [Enterprise vector store connector example.](agent.mdx#L122-L139) | Раздел 4 («Агенты, LLM и векторные сторы») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `DockerSandbox()` | [Create a secure sandbox for agent execution.](agent.mdx#L78-L106) | Раздел 5 («Безопасное исполнение в песочнице») в [семантическом ноутбуке](../../examples/pandasai_v3_semantic_ops.ipynb) |
+| `LanceDB()` | [Alternate enterprise vector store connector.](agent.mdx#L122-L139) | Раздел 4 («Агенты, LLM и векторные сторы») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `LiteLLM(...)` | [Preferred quick-start LLM configuration.](getting-started.mdx#L18-L41) | Раздел «Установка и базовая настройка» в [базовом ноутбуке](../../examples/pandasai_v3_basics.ipynb) |
+| `OpenAI(...)` | [Direct OpenAI client setup.](large-language-models.mdx#L59-L74) | Раздел 4 («Агенты, LLM и векторные сторы») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `Pinecone(...)` | [Enterprise Pinecone vector store configuration.](agent.mdx#L122-L139) | Раздел 4 («Агенты, LLM и векторные сторы») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `PostgreSQLConnector(...)` | [Database connector migration example.](migration-guide.mdx#L103-L144) | Раздел 6 («Легаси-совместимость») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `Qdrant()` | [Enterprise vector store connector example.](agent.mdx#L122-L139) | Раздел 4 («Агенты, LLM и векторные сторы») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `SmartDataframe(...)` | [Legacy SmartDataframe migration guidance.](migration-backwards-compatibility.mdx#L31-L70) | Раздел 6 («Легаси-совместимость») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `SmartDatalake(...)` | [Legacy SmartDatalake migration guidance.](migration-backwards-compatibility.mdx#L88-L116) | Раздел 6 («Легаси-совместимость») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `TransformationManager(...)` | [Semantic layer transformation utilities.](semantic-layer/transformations.mdx#L267-L314) | Раздел 2 («Трансформации и семантический слой») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `agent.add_skills(...)` | [Attach enterprise skills to agents.](migration-guide.mdx#L156-L205) | Раздел 4 («Агенты, LLM и векторные сторы») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `agent.chat(...)` | [Send prompts to an agent.](agent.mdx#L21-L48) | Раздел 4 («Агенты, LLM и векторные сторы») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `agent.clarification_questions(...)` | [Enable agent clarification questions.](migration-guide.mdx#L206-L236) | Раздел 4 («Агенты, LLM и векторные сторы») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `agent.explain(...)` | [Request agent explanations.](migration-guide.mdx#L206-L236) | Раздел 4 («Агенты, LLM и векторные сторы») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `agent.follow_up(...)` | [Continue a multi-turn conversation.](agent.mdx#L40-L52) | Раздел 4 («Агенты, LLM и векторные сторы») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `agent.rephrase_query(...)` | [Trigger agent query rephrasing.](migration-guide.mdx#L206-L236) | Раздел 4 («Агенты, LLM и векторные сторы») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `agent.train(...)` | [Few-shot agent training workflow.](agent.mdx#L145-L187) | Раздел 4 («Агенты, LLM и векторные сторы») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `calculate_bonus(...)` | [Skill example calculating employee bonuses.](skills.mdx#L36-L75) | Раздел 3 («Навыки и пользовательские функции») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `calculate_metric(...)` | [Migration example skill for KPIs.](migration-guide.mdx#L392-L420) | Раздел 3 («Навыки и пользовательские функции») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `chart_response.save(...)` | [Persist generated charts to disk.](chat-and-output.mdx#L100-L119) | Раздел 4 («Визуализация») в [базовом ноутбуке](../../examples/pandasai_v3_basics.ipynb)<br/>и раздел 5 («Глобальный follow_up() и песочница») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `clarification_questions(...)` | [Deprecated SmartDataframe clarification hook.](migration-backwards-compatibility.mdx#L150-L173) | Раздел 6 («Легаси-совместимость») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `df.chat(...)` | [Invoke chat directly on a DataFrame.](chat-and-output.mdx#L55-L100) | Разделы 1–3 в [базовом ноутбуке](../../examples/pandasai_v3_basics.ipynb) |
+| `df.to_csv(...)` | [Persist transformed semantic layer views.](semantic-layer/transformations.mdx#L398-L418) | Раздел 1 («Подготовка искусственных датасетов») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `explain(...)` | [Deprecated SmartDataframe explanation hook.](migration-backwards-compatibility.mdx#L150-L173) | Раздел 6 («Легаси-совместимость») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `follow_up(...)` | [Deprecated SmartDataframe follow-up helper.](migration-backwards-compatibility.mdx#L146-L169) | Раздел 6 («Легаси-совместимость») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `format_currency(...)` | [Skill example formatting monetary values.](skills.mdx#L76-L94) | Раздел 3 («Навыки и пользовательские функции») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `get_employee_stats(...)` | [Skill example returning employee metrics.](skills.mdx#L98-L134) | Раздел 3 («Навыки и пользовательские функции») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `lake.chat(...)` | [SmartDatalake chat usage in migration guide.](migration-backwards-compatibility.mdx#L88-L108) | Раздел 6 («Легаси-совместимость») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `my_custom_function(...)` | [Minimal custom skill skeleton.](skills.mdx#L18-L35) | Раздел 3 («Навыки и пользовательские функции») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `my_skill(...)` | [Troubleshooting skill registration.](migration-troubleshooting.mdx#L22-L44) | Раздел 3 («Навыки и пользовательские функции») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `pai.DataFrame(...)` | [Wrap dictionaries into PandasAI DataFrames.](large-language-models.mdx#L160-L190) | Раздел 1 («Подготовка искусственных датасетов») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `pai.chat(...)` | [Global chat helper working across DataFrames.](agent.mdx#L6-L33) | Раздел 1 («Диалог сразу с несколькими датафреймами») в [семантическом ноутбуке](../../examples/pandasai_v3_semantic_ops.ipynb) |
+| `pai.config.set(...)` | [Register global configuration, including LLMs.](getting-started.mdx#L33-L45) | Раздел «Установка и базовая настройка» в [базовом ноутбуке](../../examples/pandasai_v3_basics.ipynb) |
+| `pai.create(...)` | [Create semantic layer datasets.](semantic-layer/new.mdx#L8-L120) | Раздел 2 («Создание семантического слоя») в [семантическом ноутбуке](../../examples/pandasai_v3_semantic_ops.ipynb) |
+| `pai.load(...)` | [Load semantic layer datasets by path.](semantic-layer/new.mdx#L200-L224) | Раздел 4 («Детеминированные ответы») в [семантическом ноутбуке](../../examples/pandasai_v3_semantic_ops.ipynb) |
+| `pai.read_csv(...)` | [Load CSV files into PandasAI structures.](agent.mdx#L70-L94) | Раздел «Загрузка демо-датасетов» в [базовом ноутбуке](../../examples/pandasai_v3_basics.ipynb) |
+| `pai.skill(...)` | [Decorator to register enterprise skills.](skills.mdx#L8-L24) | Раздел 3 («Навыки и пользовательские функции») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `plot_salaries(...)` | [Skill example rendering salary charts.](skills.mdx#L52-L75) | Раздел 3 («Навыки и пользовательские функции») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `rephrase_query(...)` | [Deprecated SmartDataframe rephrasing hook.](migration-backwards-compatibility.mdx#L150-L173) | Раздел 6 («Легаси-совместимость») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `result.show(...)` | [Review sandbox-executed chart output securely.](privacy-security.mdx#L46-L64) | Раздел 1 («Подготовка искусственных датасетов») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `sandbox.start(...)` | [Start the Docker sandbox prior to chatting.](agent.mdx#L78-L96) | Раздел 5 («Безопасное исполнение в песочнице») в [семантическом ноутбуке](../../examples/pandasai_v3_semantic_ops.ipynb) |
+| `sandbox.stop(...)` | [Shut down the Docker sandbox after use.](agent.mdx#L88-L105) | Раздел 5 («Безопасное исполнение в песочнице») в [семантическом ноутбуке](../../examples/pandasai_v3_semantic_ops.ipynb) |
+| `smart_df.chat(...)` | [Legacy SmartDataframe chat method.](migration-backwards-compatibility.mdx#L31-L70) | Раздел 6 («Легаси-совместимость») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+| `test_skill(...)` | [Post-migration skill validation helper.](migration-guide.mdx#L440-L472) | Раздел 3 («Навыки и пользовательские функции») в [комплексном ноутбуке](../../examples/pandasai_v3_full_showcase.ipynb) |
+
+> **Note:** Multiple documentation pages often reference the same callable. The citations above point to a representative location for each item.
