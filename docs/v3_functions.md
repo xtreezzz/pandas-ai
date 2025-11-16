@@ -151,6 +151,34 @@ Executes code in the sandbox.
 *   **`code`**: The code to execute.
 *   **`environment`**: The environment to execute the code in.
 
+## Data Loaders
+
+### `DatasetLoader`
+
+An abstract base class for loading datasets.
+
+### `SQLLoader`
+
+A loader for SQL datasets.
+
+### `LocalLoader`
+
+A loader for local datasets.
+
+## Helpers
+
+### `Memory`
+
+For storing conversation history.
+
+### `Logger`
+
+For logging messages.
+
+## Vector Stores
+
+Vector store integrations like ChromaDB, Pinecone, etc., are not included in the core library. They need to be installed as separate packages. The base class for all vector stores is `VectorStore`.
+
 ## Deprecated Classes
 
 The `SmartDataframe` and `SmartDatalake` classes are deprecated and will be removed in a future version. Please use the `Agent` class instead.
