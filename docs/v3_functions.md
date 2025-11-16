@@ -83,3 +83,74 @@ Clears the memory to start a new conversation.
 *   **`last_generated_code`**: Returns the last code snippet generated.
 *   **`last_code_executed`**: Returns the last code snippet executed.
 *   **`last_prompt_used`**: Returns the last prompt used to generate code.
+
+## `DataFrame` Class
+
+A wrapper for pandas DataFrames that adds new capabilities.
+
+### `__init__(self, data, name=None, description=None, custom_head=None)`
+
+*   **`data`**: The pandas DataFrame to wrap.
+*   **`name`**: The name of the DataFrame.
+*   **`description`**: A description of the DataFrame.
+*   **`custom_head`**: A custom head to display for the DataFrame.
+
+### `chat(self, prompt, sandbox=None)`
+
+Starts a chat interaction with the DataFrame.
+
+*   **`prompt`**: The user's query.
+*   **`sandbox`**: A sandbox environment for code execution.
+
+### `follow_up(self, query, output_type=None)`
+
+Continues an existing chat interaction with the DataFrame.
+
+*   **`query`**: The user's query.
+*   **`output_type`**: A hint for the LLM about the desired output type.
+
+## `VirtualDataFrame` Class
+
+A subclass of `DataFrame` for working with remote or large datasets.
+
+## `LLM` Class
+
+The base class for all language models.
+
+### `__init__(self, api_key=None, **kwargs)`
+
+*   **`api_key`**: The API key for the LLM.
+*   **`kwargs`**: Additional keyword arguments for the LLM.
+
+### `call(self, instruction, context=None)`
+
+Makes a call to the LLM.
+
+*   **`instruction`**: The prompt to send to the LLM.
+*   **`context`**: The agent's state.
+
+### `generate_code(self, instruction, context)`
+
+Generates code using the LLM.
+
+*   **`instruction`**: The prompt to send to the LLM.
+*   **`context`**: The agent's state.
+
+## `Sandbox` Class
+
+For executing code in a secure environment.
+
+### `__init__(self, **kwargs)`
+
+*   **`kwargs`**: Additional keyword arguments for the sandbox.
+
+### `execute(self, code, environment)`
+
+Executes code in the sandbox.
+
+*   **`code`**: The code to execute.
+*   **`environment`**: The environment to execute the code in.
+
+## Deprecated Classes
+
+The `SmartDataframe` and `SmartDatalake` classes are deprecated and will be removed in a future version. Please use the `Agent` class instead.
